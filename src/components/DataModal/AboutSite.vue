@@ -19,21 +19,12 @@
         <n-text class="power">
           Copyright&nbsp;©&nbsp;2019 - {{ new Date().getFullYear() }}
         </n-text>
-        <n-text class="point" v-html="'·'" />
-        <n-a
-          v-if="icp"
-          class="beian"
-          href="https://beian.miit.gov.cn/"
-          target="_blank"
-          v-html="icp"
-        />
       </n-blockquote>
     </div>
   </n-modal>
 </template>
 
 <script setup>
-import { GithubOne } from "@icon-park/vue-next";
 import packageJson from "@/../package.json";
 
 // 关于本站数据
