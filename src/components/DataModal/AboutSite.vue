@@ -17,11 +17,11 @@
       </div>
       <n-blockquote>
         <n-text class="power">
-          Copyright&nbsp;©&nbsp;2020 - {{ new Date().getFullYear() }}
+          Copyright&nbsp;©&nbsp;2019 - {{ new Date().getFullYear() }}
           <n-a
-            :href="packageJson.home"
+            :href="https://www.metastem.su/"
             target="_blank"
-            v-html="packageJson.author"
+            v-html="Metastem"
           />
         </n-text>
         <n-text class="point" v-html="'·'" />
@@ -33,17 +33,6 @@
           v-html="icp"
         />
       </n-blockquote>
-      <n-button
-        class="github"
-        secondary
-        strong
-        @click="jumpUrl(packageJson.github)"
-      >
-        <template #icon>
-          <n-icon :component="GithubOne" />
-        </template>
-        Github
-      </n-button>
     </div>
   </n-modal>
 </template>
