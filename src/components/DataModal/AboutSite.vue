@@ -18,11 +18,6 @@
       <n-blockquote>
         <n-text class="power">
           Copyright&nbsp;©&nbsp;2019 - {{ new Date().getFullYear() }}
-          <n-a
-            :href="https://www.metastem.su/"
-            target="_blank"
-            v-html="Metastem"
-          />
         </n-text>
         <n-text class="point" v-html="'·'" />
         <n-a
